@@ -22,6 +22,10 @@ public class StringTest {
         estimatedTime = System.currentTimeMillis() - startTime;
         System.out.println("took " + estimatedTime + " ms");
 
+        startTime = System.currentTimeMillis();
+        addStringReduce(stringList);
+        estimatedTime = System.currentTimeMillis() - startTime;
+        System.out.println("took " + estimatedTime + " ms");
 
         startTime = System.currentTimeMillis();
         addStringParallelReduce(stringList);
