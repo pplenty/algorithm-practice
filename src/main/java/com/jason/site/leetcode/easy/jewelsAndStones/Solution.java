@@ -8,8 +8,9 @@ class Solution {
 
     public static void main(String[] args) {
         Solution sol = new Solution();
-
         System.out.println(sol.numJewelsInStones("aA", "aAAbbbb"));
+
+        System.out.println(sol.numJewelsInStones("z", "ZZ"));
     }
     public int numJewelsInStones(String J, String S) {
 
@@ -17,10 +18,9 @@ class Solution {
         char[] jewels = J.toCharArray();
         char[] myStones = S.toCharArray();
 
-        for (int i = 0; i < jewels.length; i++) {
-
-            for (int j = 0; j < myStones.length; j++) {
-                if (jewels[i] == myStones[j]) {
+        for (char jewel : jewels) {
+            for (char myStone : myStones) {
+                if (jewel == myStone) {
                     count++;
                 }
             }
