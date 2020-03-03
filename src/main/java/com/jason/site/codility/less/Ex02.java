@@ -14,7 +14,7 @@ public class Ex02 {
         int solution = ex2.solution("acbcbba");
         System.out.println(solution);
 
-        // test case 1
+        // test case 2
         int solution2 = ex2.solution("abcdefghijklmnopqrstuvwxyz");
         System.out.println(solution2);
 
